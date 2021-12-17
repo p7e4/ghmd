@@ -41,7 +41,7 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
     function Preview() {
-      let popup = window.open("test2.html");
+      let popup = window.open("result.html");
       let content = document.getElementById("content").value;
       axios.post('https://api.github.com/markdown', {text: content}, {headers: {'Accept': 'application/vnd.github.v3+json'}})
         .then(function (response) {
